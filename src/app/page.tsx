@@ -1,15 +1,18 @@
+import Hero from "@/ui/hero";
+import Nav from "@/ui/nav";
+
 export default function Home() {
   return (
     <>
-      <header>Nav</header>
+      <header>
+        <Nav />
+      </header>
       <main>
-        <section>Hero</section>
-        <section>Courses</section>
-        <section>Why learn With us</section>
-        <section>Open Source</section>
-        <section>Community</section>
+        <section>
+          <Hero />
+        </section>
       </main>
-      <footer>Footer</footer>
+      <footer></footer>
     </>
   );
 }
