@@ -14,7 +14,7 @@ const Link = ({ to, text }: LinkInputProps) => {
       to={to}
       smooth={true}
       duration={500}
-      className="cursor-pointer hover:text-white duration-300"
+      className="cursor-pointer hover:text-white duration-300 text-neutral-300"
     >
       {text}
     </TextLink>
