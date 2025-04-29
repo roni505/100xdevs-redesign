@@ -9,7 +9,7 @@ export type SectionProps = {
 
 const SectionHeader = ({ title, description }: SectionProps) => {
   return (
-    <div className="flex w-full flex-col items-center justify-center px-5">
+    <div className="mt-60 flex w-full flex-col items-center justify-center px-5">
       <motion.h2
         initial={{
           opacity: 0,
