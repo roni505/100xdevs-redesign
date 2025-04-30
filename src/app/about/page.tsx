@@ -1,16 +1,16 @@
+import AboutHero from "@/ui/about-hero";
 import Community from "@/ui/community";
 import Footer from "@/ui/footer";
-import StoriesContent from "@/ui/stories-content";
-import SuccessStoriesHero from "@/ui/success-stoties-hero";
+import OurPhilosophy from "@/ui/our-philosophy";
 
-const SuccessStories = () => {
+const About = () => {
   return (
     <main>
       <section>
-        <SuccessStoriesHero />
+        <AboutHero />
       </section>
       <section>
-        <StoriesContent />
+        <OurPhilosophy />
       </section>
       <section>
         <Community />
@@ -22,4 +22,4 @@ const SuccessStories = () => {
   );
 };
 
-export default SuccessStories;
+export default About;
