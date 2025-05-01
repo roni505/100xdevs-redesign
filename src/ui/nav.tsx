@@ -1,12 +1,14 @@
 "use client";
 
-import { Link } from "react-scroll";
 import Logo from "./logo";
 import Button from "./button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,41 +17,32 @@ const Nav = () => {
         <Logo />
         <div className="hidden items-center justify-center gap-6 text-neutral-300 md:flex lg:gap-10">
           <Link
-            to="Features"
-            smooth={true}
-            duration={500}
+            href="#active-cohort"
+            onClick={() => router.push("#active-course")}
             className="cursor-pointer duration-300 hover:text-white"
           >
             Courses
           </Link>
           <Link
-            to="Benefits"
-            smooth={true}
-            duration={500}
+            href="/open-source"
             className="cursor-pointer duration-300 hover:text-white"
           >
             Open Source
           </Link>
           <Link
-            to="Customers"
-            smooth={true}
-            duration={500}
+            href="/free-resources"
             className="cursor-pointer duration-300 hover:text-white"
           >
             Free Resources
           </Link>
           <Link
-            to="Pricing"
-            smooth={true}
-            duration={500}
+            href="/wins"
             className="cursor-pointer duration-300 hover:text-white"
           >
             Wins
           </Link>
           <Link
-            to=""
-            smooth={true}
-            duration={500}
+            href="/about"
             className="cursor-pointer duration-300 hover:text-white"
           >
             About
@@ -64,41 +57,31 @@ const Nav = () => {
         {isOpen && (
           <div className="absolute top-18 left-0 flex min-h-screen w-full flex-col gap-7 bg-black p-5 text-neutral-300">
             <Link
-              to="Features"
-              smooth={true}
-              duration={500}
+              href="/#active-cohort"
               className="cursor-pointer duration-300 hover:text-white"
             >
-              Features
+              Courses
             </Link>
             <Link
-              to="Benefits"
-              smooth={true}
-              duration={500}
+              href="/open-source"
               className="cursor-pointer duration-300 hover:text-white"
             >
-              Benefits
+              Open-Source
             </Link>
             <Link
-              to="Customers"
-              smooth={true}
-              duration={500}
+              href="/free-resources"
               className="cursor-pointer duration-300 hover:text-white"
             >
-              Customers
+              Free Resources
             </Link>
             <Link
-              to="Pricing"
-              smooth={true}
-              duration={500}
+              href="/wins"
               className="cursor-pointer duration-300 hover:text-white"
             >
-              Pricing
+              Wins
             </Link>
             <Link
-              to=""
-              smooth={true}
-              duration={500}
+              href="/about"
               className="cursor-pointer duration-300 hover:text-white"
             >
               About

@@ -8,7 +8,7 @@ export type SyllabusDetails = {
 const SyllabusDetails = ({ title, topic }: SyllabusDetails) => {
   return (
     <div className="flex gap-6">
-      <div className="flex flex-col items-start justify-start border-r border-l border-neutral-800 px-4 py-5">
+      <div className="flex flex-col items-start justify-start border-r border-l border-[#1F1F1F] px-4 py-5">
         <h1 className="mb-6 text-4xl text-white">{title}</h1>
         <Image
           src="/communityImg.svg"
@@ -17,7 +17,7 @@ const SyllabusDetails = ({ title, topic }: SyllabusDetails) => {
           alt="Syllabus Image"
         />
       </div>
-      <div className="flex flex-col divide-y divide-neutral-800 border-r border-l border-neutral-800">
+      <div className="flex flex-col divide-y divide-neutral-800 border-r border-l border-[#1F1F1F]">
         {topic.map((topic, idx) => (
           <TopicRow key={idx} topic={topic} />
         ))}

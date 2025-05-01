@@ -41,12 +41,15 @@ const activeCourse: CourseCardInput[] = [
 
 const ActiveCohort = () => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-6xl mx-auto">
+    <div
+      id="active-cohort"
+      className="mx-auto flex max-w-6xl flex-col items-center justify-center"
+    >
       <SectionHeader
         title="Active cohort"
         description="Live courses, real-time support, and active community — join now!"
       />
-      <div className="flex flex-wrap gap-8.5 items-center sm:justify-center lg:justify-start">
+      <div className="flex flex-wrap items-center gap-8.5 sm:justify-center lg:justify-start">
         {activeCourse.map((course, idx) => (
           <div key={idx}>
             <CourseCard
