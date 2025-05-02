@@ -1,8 +1,8 @@
 const AboutHero = () => {
   return (
     <div className="relative mx-auto flex w-full items-center justify-center lg:h-screen">
-      <span className="absolute top-[57%] h-px w-full bg-neutral-900 max-lg:hidden"></span>
-      <span className="absolute right-2/4 -z-10 h-full w-[0.5px] bg-neutral-900 max-lg:hidden"></span>
+      <span className="absolute top-[57%] h-px w-full bg-[#1F1F1F] max-lg:hidden"></span>
+      <span className="absolute right-2/4 -z-10 h-full w-[0.5px] bg-[#1F1F1F] max-lg:hidden"></span>
       <div className="mt-32 flex max-w-6xl flex-wrap items-center justify-center">
         {cardDetails.map((detail, idx) => (
           <AboutCard key={idx} detail={detail} />
