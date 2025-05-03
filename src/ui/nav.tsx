@@ -12,10 +12,10 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative z-20 w-full">
+    <div className="relative z-50 w-full">
       <nav className="fixed top-0 right-0 left-0 mx-auto flex max-w-7xl items-center justify-between bg-black/30 px-5 py-4 backdrop-blur-lg lg:px-0">
         <Logo />
-        <div className="hidden items-center justify-center gap-6 text-neutral-300 md:flex lg:gap-10">
+        <div className="hidden items-center justify-center gap-6 text-neutral-500 md:flex lg:gap-10">
           <Link
             href="#active-cohort"
             onClick={() => router.push("#active-course")}
