@@ -6,7 +6,7 @@ import { Wrench } from "lucide-react";
 import { Rocket } from "lucide-react";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import { hover, motion } from "motion/react";
+import { motion } from "motion/react";
 
 const OpenSource = () => {
   return (

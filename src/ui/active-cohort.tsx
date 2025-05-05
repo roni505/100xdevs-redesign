@@ -43,7 +43,7 @@ const ActiveCohort = () => {
   return (
     <div
       id="active-cohort"
-      className="mx-auto flex max-w-6xl flex-col items-center justify-center"
+      className="mx-auto flex max-w-6xl flex-col items-center justify-center px-5 lg:px-0"
     >
       <SectionHeader
         title="Active cohort"

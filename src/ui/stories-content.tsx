@@ -42,7 +42,7 @@ const StoriesContent = () => {
         <SearchBar />
       </div>
       <div className="w-full border-t border-b border-[#1F1F1F]">
-        <div className="mx-auto flex w-full flex-col border-r border-l border-[#1F1F1F] lg:w-6xl">
+        <div className="mx-5 flex w-full flex-col border-r border-l border-[#1F1F1F] lg:mx-auto lg:w-6xl">
           {cardContent.map((content, idx) => (
             <StoriesCard key={idx} content={content} />
           ))}
@@ -54,9 +54,9 @@ const StoriesContent = () => {
 
 const StoriesCard = ({ content }: { content: StoriesCardInput }) => {
   return (
-    <div className="w-full border-b border-[#1F1F1F] p-12">
-      <div className="mx-auto flex w-4xl items-center justify-center">
-        <div className="flex flex-col justify-center gap-24 lg:grid lg:grid-cols-2">
+    <div className="w-full border-[#1F1F1F] p-12">
+      <div className="mx-auto flex w-full items-center justify-center lg:w-4xl">
+        <div className="flex flex-col justify-center gap-12 md:gap-16 lg:grid lg:grid-cols-2 lg:gap-24">
           <Image
             src={content.src}
             width={380}

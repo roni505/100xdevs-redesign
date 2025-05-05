@@ -7,7 +7,7 @@ export type ButtonProps = {
   className?: string;
   children: ReactNode;
   varient: "secondary" | "primary" | "outlined";
-  animation?: boolean;
+  iocn?: React.ReactNode;
 };
 
 const btnStyles = {
@@ -16,28 +16,25 @@ const btnStyles = {
   secondary:
     "bg-white px-5 py-3 rounded-xl hover:bg-neutral-300 duration-300 ease-in-out text-neutral-700 font-medium",
   outlined:
-    "border border-[#0162E2] text-white text-base  px-5 py-3 rounded-xl hover:bg-neutral-800 duration-300 ease-in-out hover:text-neutral-200",
+    "border border-[#0162E2] text-white text-base  px-5 py-3 rounded-xl duration-300 ease-in-out hover:text-neutral-200",
 };
 
-const Button = ({ className, children, varient, animation }: ButtonProps) => {
-  const animate = animation && varient !== "secondary";
+const Button = ({ className, children, varient, iocn }: ButtonProps) => {
   return (
     <motion.button
-      initial={animate ? { opacity: 0 } : undefined}
-      animate={
-        animate
-          ? {
-              opacity: 1,
-              transition: {
-                delay: 0.8,
-                ease: "easeInOut",
-              },
-            }
-          : undefined
-      }
-      className={`${className} ${btnStyles[varient]} cursor-pointer`}
+      whileHover="hover"
+      className={`${className} ${btnStyles[varient]} flex cursor-pointer items-center justify-center gap-1 hover:bg-blue-900`}
     >
       {children}
+      <motion.div
+        variants={{
+          hover: {
+            x: 5,
+          },
+        }}
+      >
+        {iocn}
+      </motion.div>
     </motion.button>
   );
 };

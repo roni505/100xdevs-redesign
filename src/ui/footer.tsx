@@ -4,8 +4,8 @@ import Logo from "./logo";
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl flex justify-center items-cente mx-auto flex-col mt-40 w-full">
-      <div className="flex justify-between w-full items-center">
+    <div className="items-cente mt-40 flex w-full max-w-7xl flex-col justify-center px-5 lg:mx-auto">
+      <div className="flex w-full items-center justify-between">
         <Logo />
         <div className="flex gap-5">
           <Link text="Home" to="" />
@@ -14,9 +14,11 @@ const Footer = () => {
           <Link text="Refund Policy" to="" />
         </div>
       </div>
-      <span className="w-full h-px bg-neutral-800 my-8"></span>
-      <div className="flex justify-between items-center">
-        <span className="text-white">© 2025 100xDevs. All rights reserved</span>
+      <span className="my-8 h-px w-full bg-neutral-800"></span>
+      <div className="flex items-center justify-between">
+        <span className="text-white">
+          © 2025 100xDevs. All rights reserved
+        </span>
         <div className="flex gap-4">
           <Image
             src="/youtubeIcon.svg"
@@ -39,8 +41,8 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="flex w-full items-center justify-center mt-12">
-        <h1 className="text-center text-[200px] bg-gradient-to-b from-neutral-400 to-black bg-clip-text text-transparent">
+      <div className="mt-12 hidden w-full items-center justify-center lg:flex">
+        <h1 className="bg-gradient-to-b from-neutral-400 to-black bg-clip-text text-center text-[200px] text-transparent">
           100xDevs
         </h1>
       </div>

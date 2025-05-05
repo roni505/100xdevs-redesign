@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./button";
+import { ChevronRight } from "lucide-react";
 
 export type CourseCardInput = {
   title: string;
@@ -17,18 +18,22 @@ const CourseCard = ({
   src,
 }: CourseCardInput) => {
   return (
-    <div className="flex w-[360px] p-[1px] rounded-[20px] bg-gradient-to-b from-[#303539] to-[#191919]">
-      <div className="bg-black w-full rounded-[20px] p-5">
+    <div className="flex w-[360px] rounded-[20px] bg-gradient-to-b from-[#303539] to-[#191919] p-[1px]">
+      <div className="w-full rounded-[20px] bg-black p-5">
         <Image src={src} width={320} height={180} alt="Banner for cohort" />
-        <h4 className="text-white text-lg mt-5 font-medium">{title}</h4>
-        <div className="text-base flex justify-between mt-6 font-medium">
+        <h4 className="mt-5 text-lg font-medium text-white">{title}</h4>
+        <div className="mt-6 flex justify-between text-base font-medium">
           <div className="flex gap-2">
             <span className="text-white">{prize}</span>
             <span className="text-neutral-500">{OGprize}</span>
           </div>
           <span className="text-[#0E8A00]">{discount}</span>
         </div>
-        <Button className="w-full mt-6 " varient="secondary">
+        <Button
+          className="mt-6 w-full"
+          varient="secondary"
+          iocn={<ChevronRight size={20} />}
+        >
           View Details
         </Button>
       </div>
