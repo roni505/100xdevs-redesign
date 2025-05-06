@@ -38,7 +38,7 @@ const Hero = () => {
       >
         <div
           ref={overlayRef}
-          className="absolute inset-0 z-0 bg-black/90 transition-opacity duration-500"
+          className="absolute inset-0 z-0 bg-black/93 transition-opacity duration-500"
           style={maskStyle}
         ></div>
 

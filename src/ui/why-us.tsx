@@ -1,11 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import SectionHeader from "./section-header";
+import { hover, motion } from "motion/react";
 
 const WhyUs = () => {
   return (
-    <div className="flex flex-col  lg:mx-auto max-w-6xl mx-5">
+    <div className="mx-5 flex max-w-6xl flex-col lg:mx-auto">
       <SectionHeader title="Why learn with us ?" />
-      <div className="flex flex-wrap w-full justify-center">
+      <div className="flex w-full flex-wrap justify-center">
         {whyUsDetails.map((details, idx) => (
           <div key={idx}>
             <WhyUsCard src={details.src} title={details.title} p={details.p} />
@@ -42,12 +45,22 @@ export type WhyUsCardInput = {
 
 const WhyUsCard = ({ title, p, src }: WhyUsCardInput) => {
   return (
-    <div className="lg:w-96 lg:border-l border-[#252525] lg:px-[30.6px] py-8 flex lg:flex-col max-lg:border-t md:flex-row w-full max-lg:items-center h-full flex-col lg:hover:bg-gradient-to-b from-neutral-800 to-black lg:hover:border lg:hover:border-neutral-700">
+    <motion.div
+      whileHover="hover"
+      className="flex h-full w-full flex-col border-[#252525] from-neutral-800 to-black py-8 max-lg:items-center max-lg:border-t md:flex-row lg:w-96 lg:flex-col lg:border-l lg:px-[30.6px] lg:hover:border lg:hover:border-neutral-700 lg:hover:bg-gradient-to-b"
+    >
       <div>
-        <h3 className="text-white text-2xl">{title}</h3>
-        <p className="text-base text-neutral-500 mt-6 w-full">{p}</p>
+        <h3 className="text-2xl text-white">{title}</h3>
+        <p className="mt-6 w-full text-base text-neutral-500">{p}</p>
       </div>
-      <div className="relative">
+      <motion.div
+        variants={{
+          hover: {
+            scale: 1.12,
+          },
+        }}
+        className="relative"
+      >
         <Image
           src={src}
           width={330}
@@ -56,8 +69,8 @@ const WhyUsCard = ({ title, p, src }: WhyUsCardInput) => {
           className="mt-20"
         />
         <div className="absolute bottom-0 h-1/4 w-full bg-gradient-to-t from-black to-transparent"></div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
