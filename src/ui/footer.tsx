@@ -5,7 +5,7 @@ import Logo from "./logo";
 const Footer = () => {
   return (
     <div className="items-cente mt-40 flex w-full max-w-7xl flex-col justify-center px-5 lg:mx-auto">
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full flex-wrap items-center justify-between gap-5">
         <Logo />
         <div className="flex gap-5">
           <Link text="Home" to="" />
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
       </div>
       <span className="my-8 h-px w-full bg-neutral-800"></span>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-5">
         <span className="text-white">
           © 2025 100xDevs. All rights reserved
         </span>

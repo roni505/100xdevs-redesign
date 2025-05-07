@@ -30,7 +30,7 @@ const Hero = () => {
     : {};
 
   return (
-    <div className="flex h-[calc(100vh-3rem)] w-full items-center justify-center pt-28 text-white">
+    <div className="flex h-[calc(100vh-3rem)] w-full items-center justify-center px-5 pt-28 text-white lg:px-0">
       <div
         className="group relative h-[calc(100vh-3rem)] w-full bg-[url(/heroBgImg.svg)] bg-cover bg-center"
         onMouseMove={handleMouseMove}
@@ -43,8 +43,8 @@ const Hero = () => {
         ></div>
 
         <div className="relative z-10 flex h-[calc(100vh-3rem)] flex-col items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(0,0,0,300),_transparent_70%)]">
-          <div className="w-2xl">
-            <h1 className="text-center text-7xl leading-tight font-medium">
+          <div className="w-full md:w-2xl">
+            <h1 className="text-center text-4xl leading-tight font-medium sm:text-5xl lg:text-7xl">
               100xDevs, because 10x ain't enough!
             </h1>
           </div>

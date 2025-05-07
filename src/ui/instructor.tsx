@@ -4,7 +4,7 @@ import SectionHeader from "./section-header";
 
 const Instructor = () => {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center">
+    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center px-5 lg:px-0">
       <SectionHeader title="Meet Your Instructor" />
       <div className="relative flex items-start justify-center rounded-4xl bg-gradient-to-b from-[#303539] to-[#0A0B10] p-px">
         <span className="absolute top-0 mx-auto flex h-[1px] w-2/5 bg-gradient-to-r from-transparent via-[#1500ff] to-transparent md:right-0"></span>
@@ -15,7 +15,7 @@ const Instructor = () => {
           alt="Bg imagek"
           className="absolute md:right-10"
         />
-        <div className="flex rounded-4xl bg-black px-12 py-6">
+        <div className="flex rounded-4xl bg-black p-5 lg:px-12 lg:py-6">
           <div className="flex justify-center max-md:flex-wrap-reverse">
             <div className="relative">
               <h4 className="text-2xl text-white">Harkirat Singh</h4>
@@ -41,7 +41,6 @@ const Instructor = () => {
               alt="Bg imagek"
               className="z-10"
             />
-            {/* <div className="absolute  h-5/12 bg-gradient-to-t from-black to-20%"></div> */}
           </div>
         </div>
       </div>

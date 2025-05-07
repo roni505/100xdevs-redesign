@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import SectionHeader from "./section-header";
-import { hover, motion } from "motion/react";
+import { motion } from "motion/react";
 
 const WhyUs = () => {
   return (

@@ -51,7 +51,7 @@ const topics: TopicRowInput[] = [
 
 const Syllabus = () => {
   return (
-    <div className="mx-auto flex w-full flex-col items-center justify-center">
+    <div className="mx-auto flex w-full flex-col items-center justify-center px-5 lg:px-0">
       <SectionHeader
         title="Syllabus"
         description="Our step-by-step syllabus builds on each module to ensure a smooth learning journey—perfect for both beginners and advanced"

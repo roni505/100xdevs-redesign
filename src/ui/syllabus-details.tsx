@@ -7,9 +7,11 @@ export type SyllabusDetails = {
 
 const SyllabusDetails = ({ title, topic }: SyllabusDetails) => {
   return (
-    <div className="flex gap-6">
-      <div className="flex flex-col items-start justify-start border-r border-l border-[#1F1F1F] px-4 py-5">
-        <h1 className="mb-6 text-4xl text-white">{title}</h1>
+    <div className="relative mx-auto flex w-full items-center justify-center gap-6 max-sm:flex-wrap">
+      <div className="flex flex-col items-start justify-start border-r border-l border-[#1F1F1F] px-4 py-5 sm:sticky sm:top-[74px] sm:max-h-screen sm:self-start sm:overflow-y-auto">
+        <div className="w-full border-b border-[#1F1F1F] pb-6">
+          <h1 className="text-4xl text-white">{title}</h1>
+        </div>
         <Image
           src="/communityImg.svg"
           width={450}

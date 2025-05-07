@@ -4,7 +4,7 @@ import Button from "./button";
 
 const CourseHero = () => {
   return (
-    <div className="mx-auto mt-32 flex max-w-7xl flex-wrap items-center justify-center gap-10 lg:flex-nowrap">
+    <div className="mx-auto mt-32 flex max-w-7xl flex-wrap items-center justify-center gap-10 px-5 lg:flex-nowrap lg:px-0">
       <div className="flex bg-white max-lg:w-full lg:w-[540px]">
         <Image
           src="/communityImg.svg"
@@ -15,10 +15,10 @@ const CourseHero = () => {
         />
       </div>
       <div className="mx-5 flex flex-col items-center justify-center lg:mx-0 lg:w-[700px] lg:items-start lg:justify-start">
-        <h2 className="flex w-9/12 text-center text-5xl leading-tight font-medium text-white lg:w-full lg:text-start">
+        <h2 className="flex w-9/12 text-center text-2xl leading-tight font-medium text-white md:text-3xl lg:w-full lg:text-start lg:text-5xl">
           Complete Web Development + Devops + Blockchain Cohort
         </h2>
-        <p className="mt-5 flex w-2/3 text-center text-base text-neutral-200 lg:w-full lg:text-start">
+        <p className="mt-5 flex w-2/3 text-center text-sm text-neutral-200 md:text-base lg:w-full lg:text-start">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus. Donec quam

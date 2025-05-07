@@ -35,7 +35,7 @@ const whybestDetails: OtherCourseDetailsInput[] = [
 
 const WhyBest = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center px-5 lg:px-0">
       <SectionHeader title="Why this is the best course ?" />
       <div className="flex flex-wrap items-center justify-center gap-9">
         {/* First card */}

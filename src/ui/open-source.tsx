@@ -10,16 +10,16 @@ import { motion } from "motion/react";
 
 const OpenSource = () => {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
+    <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-5 lg:px-0">
       <SectionHeader
         title="Contribute to our open source repos"
         description="Explore, fork, contribute, collaborate, build, and grow with our open source projects — the best way to learn is by doing, together."
       />
       <div className="flex flex-wrap gap-6">
         {/* First Project */}
-        <div className="relative flex w-[564px] rounded-3xl bg-gradient-to-b from-[#24282b] to-[#000000] p-[1px] max-md:mx-5 max-md:w-full">
+        <div className="relative flex w-full rounded-3xl bg-gradient-to-b from-[#24282b] to-[#000000] p-[1px] max-md:mx-5 max-md:w-full lg:w-[564px]">
           <span className="absolute top-0 left-1/2 h-px w-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-[#9D9D9D] to-transparent"></span>
-          <div className="flex w-full flex-col rounded-3xl bg-black p-11 max-md:w-full">
+          <div className="flex w-full flex-col rounded-3xl bg-black p-5 max-md:w-full md:p-11">
             <div className="relative z-20 h-[320px] cursor-pointer">
               <div className="absolute bottom-0 h-2/3 w-full bg-gradient-to-t from-black to-black/10"></div>
               <motion.div
@@ -27,7 +27,7 @@ const OpenSource = () => {
                   y: -180,
                   transition: {
                     type: "spring",
-                    delay: 0.6,
+                    delay: 0.8,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "mirror",
@@ -112,7 +112,7 @@ const OpenSource = () => {
         {/* Second Project */}
         <div className="relative flex rounded-3xl bg-gradient-to-b from-[#24282b] to-[#000000] p-[1px] max-md:mx-5 max-md:w-full">
           <span className="absolute top-0 left-1/2 h-px w-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-[#9D9D9D] to-transparent"></span>
-          <div className="flex flex-col items-start justify-center rounded-3xl bg-black p-11 max-md:w-full">
+          <div className="flex flex-col items-start justify-center rounded-3xl bg-black p-5 max-md:w-full md:p-11">
             <div className="relative z-20 flex bg-[url(/mobileMagicImg.svg)] bg-cover lg:h-[316px]">
               <div className="absolute bottom-0 h-2/3 w-full bg-gradient-to-t from-black to-transparent"></div>
               <motion.div
