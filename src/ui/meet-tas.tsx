@@ -1,6 +1,8 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
 import SectionHeader from "./section-header";
+import { motion } from "motion/react";
 
 export type TAcardInput = {
   name: string;
@@ -10,27 +12,27 @@ export type TAcardInput = {
 const taInfo: TAcardInput[] = [
   {
     name: "TA Sumana",
-    src: "/hkiratImg.svg",
+    src: "TASumanaImg.svg",
   },
   {
     name: "TA Jack Sparrow",
-    src: "/hkiratImg.svg",
+    src: "/TAJackImg.svg",
   },
   {
     name: "TA Harry Potter",
-    src: "/hkiratImg.svg",
+    src: "/TAHarryImg.svg",
   },
   {
     name: "TA Rushikesh G",
-    src: "/hkiratImg.svg",
+    src: "/TARushikeshImg.svg",
   },
   {
     name: "TA Tarun",
-    src: "/hkiratImg.svg",
+    src: "/TATarunImg.svg",
   },
   {
     name: "TA SerBarristan",
-    src: "/hkiratImg.svg",
+    src: "/TASerbarristanImg.svg",
   },
 ];
 
@@ -38,7 +40,7 @@ const MeetTA = () => {
   return (
     <div className="mx-auto flex flex-col items-center justify-center">
       <SectionHeader title="Meet Your TAs" />
-      <div className="flex flex-wrap items-center justify-center gap-12 lg:w-[696px]">
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-12 lg:w-[696px]">
         {taInfo.map((info, idx) => (
           <TAcard key={idx} name={info.name} src={info.src} />
         ))}
@@ -50,7 +52,13 @@ const MeetTA = () => {
 const TAcard = ({ name, src }: TAcardInput) => {
   return (
     <div className="flex flex-col items-center justify-center gap-5">
-      <Image src={src} width={200} height={200} alt="TA images" />
+      <motion.div
+        whileHover={{
+          scale: 1.03,
+        }}
+      >
+        <Image src={src} width={200} height={200} alt="TA images" />
+      </motion.div>
       <span className="text-xl font-medium text-white">{name}</span>
     </div>
   );

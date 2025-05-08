@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Button from "./button";
 import DevTrust from "./dev-trust";
+import Balancer from "react-wrap-balancer";
 
 const Hero = () => {
   const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(
@@ -45,7 +46,7 @@ const Hero = () => {
         <div className="relative z-10 flex h-[calc(100vh-3rem)] flex-col items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(0,0,0,300),_transparent_70%)]">
           <div className="w-full md:w-2xl">
             <h1 className="text-center text-4xl leading-tight font-medium sm:text-5xl lg:text-7xl">
-              100xDevs, because 10x ain't enough!
+              <Balancer>100xDevs, because 10x ain&apos;t enough!</Balancer>
             </h1>
           </div>
           <div className="mt-14 flex gap-3">

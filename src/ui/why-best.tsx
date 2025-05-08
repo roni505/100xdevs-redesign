@@ -33,6 +33,36 @@ const whybestDetails: OtherCourseDetailsInput[] = [
   },
 ];
 
+const xdevsDetails: OtherCourseDetailsInput[] = [
+  {
+    text: "Weekly LIVE sessions",
+  },
+  {
+    text: "Make real friends",
+  },
+  {
+    text: "Real assignments",
+  },
+  {
+    text: "Mentor based learning",
+  },
+  {
+    text: "Get shit done",
+  },
+  {
+    text: "Exclusive guest sessions",
+  },
+  {
+    text: "Real design stories",
+  },
+  {
+    text: "Build your portfolio",
+  },
+  {
+    text: "Lifetime network",
+  },
+];
+
 const WhyBest = () => {
   return (
     <div className="flex flex-col items-center justify-center px-5 lg:px-0">
@@ -60,7 +90,7 @@ const WhyBest = () => {
           </div>
         </div>
         {/* Second card */}
-        <div className="relative flex items-center justify-center rounded-4xl bg-gradient-to-b from-[#303539] to-[#0A0B10] p-px">
+        <div className="relative flex w-96 items-center justify-center rounded-4xl bg-gradient-to-b from-[#303539] to-[#0A0B10] p-px">
           <span className="absolute top-0 right-0 left-0 mx-auto flex h-[1px] w-1/2 bg-gradient-to-r from-transparent via-[#15ff00] to-transparent"></span>
           <Image
             src="/bg-2.svg"
@@ -69,12 +99,10 @@ const WhyBest = () => {
             alt="background img"
             className="absolute"
           />
-          <div className="rounded-4xl bg-black p-8">
-            <h2 className="mb-7 text-4xl font-semibold text-white">
-              Other course
-            </h2>
+          <div className="w-96 rounded-4xl bg-black p-8">
+            <h2 className="mb-7 text-4xl font-semibold text-white">100xDevs</h2>
             <div className="flex flex-col gap-6">
-              {whybestDetails.map((detail, idx) => (
+              {xdevsDetails.map((detail, idx) => (
                 <OurCourse key={idx} text={detail.text} />
               ))}
             </div>

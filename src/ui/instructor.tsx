@@ -20,18 +20,18 @@ const Instructor = () => {
             <div className="relative">
               <h4 className="text-2xl text-white">Harkirat Singh</h4>
               <p className="mt-5 text-lg font-normal text-neutral-400">
-                An IIT Roorkee alumnus with a B.Tech in Computer Science,
-                Harkirat Singh has worked at top companies like Goldman Sachs,
-                Bag Pack, and Gather AI. With hands-on experience in building
-                and deploying large-scale systems, he has contributed to
-                everything from high-frequency trading platforms to AI-driven
-                infrastructure. Now, he brings that experience into
-                teaching—blending real-world DevOps practices, modern web
-                development techniques, and the fast-evolving world of Web3.
-                Whether you're just starting out or looking to deepen your
-                skills, you'll be learning from someone who has been at the
-                forefront of tech and knows how to build and ship impactful
-                products.
+                {`An IIT Roorkee alumnus with a B.Tech in Computer Science,
+                  Harkirat Singh has worked at top companies like Goldman Sachs,
+                  Bag Pack, and Gather AI. With hands-on experience in building
+                  and deploying large-scale systems, he has contributed to
+                  everything from high-frequency trading platforms to AI-driven
+                  infrastructure. Now, he brings that experience into
+                  teaching—blending real-world DevOps practices, modern web
+                  development techniques, and the fast-evolving world of Web3.
+                  Whether you're just starting out or looking to deepen your
+                  skills, you'll be learning from someone who has been at the
+                  forefront of tech and knows how to build and ship impactful
+                  products.`}
               </p>
             </div>
             <Image

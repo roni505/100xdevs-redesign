@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValue, useTransform, animate } from "motion/react";
+import { motion, useMotionValue, animate } from "motion/react";
 import { useEffect, useState } from "react";
 
 export type AboutCardInput = {
