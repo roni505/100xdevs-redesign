@@ -56,7 +56,7 @@ const ContentCard = ({ content }: { content: ContentCardInput }) => {
         <div className="flex flex-col items-center justify-center gap-4 border-b border-[#1F1F1F] p-8">
           <motion.div
             whileHover={{
-              scale: 1.04,
+              scale: 1.03,
             }}
           >
             <Image

@@ -39,10 +39,10 @@ const CourseHero = () => {
           Web Development + Devops + Blockchain Cohort
         </h2>
         <p className="mt-5 flex w-2/3 text-center text-sm text-neutral-400 md:text-base lg:w-full lg:text-start">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-          penatibusque eu commodo ligula eget dolor. Aenean massa. Cum sociis
-          natoque penatibusque eu{" "}
+          Master full-stack web development, explore decentralized Web3
+          technologies, and learn modern DevOps workflows. Gain hands-on
+          experience through real projects, peer collaboration, and expert
+          mentorship to build production-grade solutions.{" "}
         </p>
         <div className="mt-7 flex flex-col gap-2 lg:hidden">
           <div className="flex gap-2">
