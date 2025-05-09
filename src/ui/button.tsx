@@ -8,6 +8,7 @@ export type ButtonProps = {
   children: ReactNode;
   varient: "secondary" | "primary" | "outlined";
   iocn?: React.ReactNode;
+  onClick?: () => void;
 };
 
 const btnStyles = {
@@ -19,10 +20,17 @@ const btnStyles = {
     "border border-[#0162E2] text-white text-base  px-5 py-3 rounded-xl duration-300 ease-in-out hover:text-neutral-200 hover:bg-blue-950",
 };
 
-const Button = ({ className, children, varient, iocn }: ButtonProps) => {
+const Button = ({
+  className,
+  children,
+  varient,
+  iocn,
+  onClick,
+}: ButtonProps) => {
   return (
     <motion.button
       whileHover="hover"
+      onClick={onClick}
       className={`${className} ${btnStyles[varient]} flex cursor-pointer items-center justify-center gap-1`}
     >
       {children}

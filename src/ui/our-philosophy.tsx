@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useAnimate } from "motion/react";
+import { motion } from "motion/react";
 
 const philosophyDetails: PhilosophyCardInput[] = [
   {

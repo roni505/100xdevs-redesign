@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./button";
 import { ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export type CourseCardInput = {
   title: string;
@@ -17,6 +20,8 @@ const CourseCard = ({
   discount,
   src,
 }: CourseCardInput) => {
+  const router = useRouter();
+
   return (
     <div className="flex w-[360px] rounded-[20px] bg-gradient-to-b from-[#303539] to-[#191919] p-[1px]">
       <div className="w-full rounded-[20px] bg-black p-5">
@@ -33,6 +38,7 @@ const CourseCard = ({
           className="mt-6 w-full"
           varient="secondary"
           iocn={<ChevronRight size={20} />}
+          onClick={() => router.push("/webDevopsWeb3")}
         >
           View Details
         </Button>

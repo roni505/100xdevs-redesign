@@ -1,4 +1,3 @@
-import SectionHeader from "./section-header";
 import { Star } from "lucide-react";
 import { GitFork } from "lucide-react";
 import { Users } from "lucide-react";
