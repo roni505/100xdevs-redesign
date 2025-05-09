@@ -7,7 +7,7 @@ const CourseHero = () => {
     <div className="mx-auto flex max-w-7xl flex-wrap items-start justify-center gap-10 px-5 pt-32 lg:mt-14 lg:flex-nowrap lg:px-0">
       <div className="flex flex-col max-lg:w-full lg:w-[600px]">
         <Image
-          src="/cohort3Img.png"
+          src="/cohort3Img.svg"
           width={650}
           height={300}
           alt="Course banner"

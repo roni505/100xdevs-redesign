@@ -35,7 +35,7 @@ const Instructor = () => {
               </p>
             </div>
             <Image
-              src="/HkiratImg.svg"
+              src="/hkiratImg.svg"
               width={380}
               height={328}
               alt="Bg imagek"

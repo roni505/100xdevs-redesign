@@ -64,10 +64,6 @@ const projectsDetails: OSprojectsCardInputs[] = [
 const OurProjects = () => {
   return (
     <div className="mx-auto flex w-full flex-col items-center justify-center border-t border-[#1F1F1F] px-5 lg:px-0">
-      {/* <SectionHeader title="Explore our projects" /> */}
-      {/* <h2 className="pb-20 text-3xl font-medium text-neutral-100 sm:text-4xl md:text-5xl">
-        Explore our projects
-      </h2> */}
       <div className="flex max-w-6xl flex-wrap items-center justify-center gap-9 border-r border-l border-[#1F1F1F] px-5 py-7 lg:px-0">
         {projectsDetails.map((details, idx) => (
           <OSprojectsCard key={idx} details={details} />
@@ -81,7 +77,7 @@ export default OurProjects;
 
 const OSprojectsCard = ({ details }: { details: OSprojectsCardInputs }) => {
   return (
-    <div className="w-full cursor-pointer rounded-lg border border-neutral-800 bg-[#0A0A0A] p-6 transition-all duration-300 hover:bg-neutral-900 lg:w-lg">
+    <div className="w-full cursor-pointer rounded-lg border border-neutral-800 bg-[#0A0A0A] p-6 transition-all duration-300 hover:bg-black lg:w-lg">
       <span className="text-xl text-white">{details.title}</span>
       <p className="mt-3 mb-20 text-base text-neutral-500">
         {details.description}

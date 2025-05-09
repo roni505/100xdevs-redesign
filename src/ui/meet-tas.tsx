@@ -57,7 +57,13 @@ const TAcard = ({ name, src }: TAcardInput) => {
           scale: 1.03,
         }}
       >
-        <Image src={src} width={200} height={200} alt="TA images" />
+        <Image
+          src={src}
+          width={200}
+          height={200}
+          alt="TA images"
+          className="cursor-pointer"
+        />
       </motion.div>
       <span className="text-xl font-medium text-white">{name}</span>
     </div>

@@ -213,13 +213,14 @@ const DeployInstruction = () => {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex gap-2">
-        <Badge text="Describe" />
-        <InstructionText text="what you want to" />
-        <Badge text="build" />
+        <Badge text="Deploy" />
+        <InstructionText text="to the chosen" />
+        <Badge text="environment" />
       </div>
       <div className="flex gap-2">
-        <InstructionText text="including any specific" />
-        <Badge text="features" />
+        <InstructionText text="Ensure it's" />
+        <Badge text="accessible" />
+        <InstructionText text="and ready for users" />
       </div>
     </div>
   );

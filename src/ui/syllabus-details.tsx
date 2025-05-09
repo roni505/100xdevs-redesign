@@ -21,7 +21,7 @@ const SyllabusDetails = ({ title, topic }: SyllabusDetails) => {
         >
           <div className="group relative">
             <Image
-              src="/cohort3Img.png"
+              src="/cohort3Img.svg"
               width={450}
               height={306}
               alt="Syllabus Image"
