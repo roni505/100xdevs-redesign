@@ -16,14 +16,14 @@ const btnStyles = {
   secondary:
     "bg-white px-5 py-3 rounded-xl hover:bg-neutral-300 duration-300 ease-in-out text-neutral-700 font-medium",
   outlined:
-    "border border-[#0162E2] text-white text-base  px-5 py-3 rounded-xl duration-300 ease-in-out hover:text-neutral-200",
+    "border border-[#0162E2] text-white text-base  px-5 py-3 rounded-xl duration-300 ease-in-out hover:text-neutral-200 hover:bg-blue-950",
 };
 
 const Button = ({ className, children, varient, iocn }: ButtonProps) => {
   return (
     <motion.button
       whileHover="hover"
-      className={`${className} ${btnStyles[varient]} flex cursor-pointer items-center justify-center gap-1 hover:bg-blue-900`}
+      className={`${className} ${btnStyles[varient]} flex cursor-pointer items-center justify-center gap-1`}
     >
       {children}
       <motion.div

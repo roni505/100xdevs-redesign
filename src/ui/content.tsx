@@ -1,34 +1,34 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export type ContentCardInput = {
   src: string;
   text: string;
+  href: string;
 };
 
 const contentDetails: ContentCardInput[] = [
   {
-    src: "/communityImg.svg",
-    text: "Rust 0 - 100 Bootcamp, learn by doing",
+    src: "/rustImg.svg",
+    text: "Rust Tutorial",
+    href: "https://www.youtube.com/watch?v=qP7LzZqGh30",
   },
   {
-    src: "/communityImg.svg",
-    text: "Rust 0 - 100 Bootcamp, learn by doing",
+    src: "/devopsImg.svg",
+    text: "DevOps Bootcamp",
+    href: "https://www.youtube.com/watch?v=sSRaakd95Nk&t=1038s",
   },
   {
-    src: "/communityImg.svg",
-    text: "Rust 0 - 100 Bootcamp, learn by doing",
+    src: "/deployImg.svg",
+    text: "Deploy website to production in 30 mins",
+    href: "https://www.youtube.com/watch?v=gViEtIJ1DCw",
   },
   {
-    src: "/communityImg.svg",
-    text: "Rust 0 - 100 Bootcamp, learn by doing",
-  },
-  {
-    src: "/communityImg.svg",
-    text: "Rust 0 - 100 Bootcamp, learn by doing",
-  },
-  {
-    src: "/communityImg.svg",
-    text: "Rust 0 - 100 Bootcamp, learn by doing",
+    src: "/mcpImg.svg",
+    text: "What are MCP servers",
+    href: "https://www.youtube.com/watch?v=1iJ34tTjwwo&t=460s",
   },
 ];
 
@@ -51,17 +51,26 @@ export default Content;
 
 const ContentCard = ({ content }: { content: ContentCardInput }) => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-4 border-b border-[#1F1F1F] p-8">
-        <Image
-          src={content.src}
-          height={330}
-          width={509}
-          alt="Img"
-          className="w-full lg:w-[509px]"
-        />
-        <span className="text-xl font-normal text-white">{content.text}</span>
-      </div>
+    <div className="flex cursor-pointer flex-col items-center justify-center">
+      <a target="_blank" href={content.href}>
+        <div className="flex flex-col items-center justify-center gap-4 border-b border-[#1F1F1F] p-8">
+          <motion.div
+            whileHover={{
+              scale: 1.04,
+            }}
+          >
+            <Image
+              src={content.src}
+              height={330}
+              width={509}
+              alt="Img"
+              className="w-full rounded-lg lg:w-[509px]"
+            />
+          </motion.div>
+
+          <span className="text-xl font-normal text-white">{content.text}</span>
+        </div>
+      </a>
     </div>
   );
 };

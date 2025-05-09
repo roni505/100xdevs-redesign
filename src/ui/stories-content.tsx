@@ -14,23 +14,23 @@ export type StoriesCardInput = {
 const cardContent: StoriesCardInput[] = [
   {
     name: "Mohit Rawat",
-    src: "/communityImg.svg",
-    text: "Mohit Rawat was working as a freelance Product Designer when he joined the 10kdesigners cohort. After completing the program, he successfully secured a Product Designer role at Adda247.",
+    src: "/wins1.svg",
+    text: "Mohit Rawat a tech upskilling cohort where he dove deep into TypeScript, React, Next.js, Node.js, and cloud deployment. Through hands-on projects and mentorship, he built production-ready apps, contributed to open-source tools, and developed a strong GitHub portfolio.",
   },
   {
     name: "Mohit Rawat",
-    src: "/communityImg.svg",
-    text: "Mohit Rawat was working as a freelance Product Designer when he joined the 10kdesigners cohort. After completing the program, he successfully secured a Product Designer role at Adda247.",
+    src: "/wins2.svg",
+    text: "Mohit Rawat a tech upskilling cohort where he dove deep into TypeScript, React, Next.js, Node.js, and cloud deployment. Through hands-on projects and mentorship, he built production-ready apps, contributed to open-source tools, and developed a strong GitHub portfolio.",
   },
   {
     name: "Mohit Rawat",
-    src: "/communityImg.svg",
-    text: "Mohit Rawat was working as a freelance Product Designer when he joined the 10kdesigners cohort. After completing the program, he successfully secured a Product Designer role at Adda247.",
+    src: "/wins1.svg",
+    text: "Mohit Rawat a tech upskilling cohort where he dove deep into TypeScript, React, Next.js, Node.js, and cloud deployment. Through hands-on projects and mentorship, he built production-ready apps, contributed to open-source tools, and developed a strong GitHub portfolio.",
   },
   {
     name: "Mohit Rawat",
-    src: "/communityImg.svg",
-    text: "Mohit Rawat was working as a freelance Product Designer when he joined the 10kdesigners cohort. After completing the program, he successfully secured a Product Designer role at Adda247.",
+    src: "/wins2.svg",
+    text: "Mohit Rawat a tech upskilling cohort where he dove deep into TypeScript, React, Next.js, Node.js, and cloud deployment. Through hands-on projects and mentorship, he built production-ready apps, contributed to open-source tools, and developed a strong GitHub portfolio.",
   },
 ];
 
@@ -42,7 +42,7 @@ const StoriesContent = () => {
         <SearchBar />
       </div>
       <div className="w-full border-t border-b border-[#1F1F1F]">
-        <div className="mx-5 flex w-full flex-col border-r border-l border-[#1F1F1F] lg:mx-auto lg:w-6xl">
+        <div className="divider-[#1F1F1F] mx-5 flex w-full flex-col divide-y border-r border-l border-[#1F1F1F] lg:mx-auto lg:w-6xl">
           {cardContent.map((content, idx) => (
             <StoriesCard key={idx} content={content} />
           ))}
@@ -72,9 +72,18 @@ const StoriesCard = ({ content }: { content: StoriesCardInput }) => {
               {content.text}
             </p>
             <div className="mt-9 flex justify-center gap-4 lg:justify-start">
-              <FaXTwitter className="text-neutral-700" size={32} />
-              <BsGithub className="text-neutral-700" size={32} />
-              <BsLinkedin className="text-neutral-700" size={32} />
+              <FaXTwitter
+                className="cursor-pointer text-neutral-700 transition-all duration-300 hover:text-neutral-200"
+                size={32}
+              />
+              <BsGithub
+                className="cursor-pointer text-neutral-700 transition-all duration-300 hover:text-neutral-200"
+                size={32}
+              />
+              <BsLinkedin
+                className="cursor-pointer text-neutral-700 transition-all duration-300 hover:text-neutral-200"
+                size={32}
+              />
             </div>
           </div>
         </div>

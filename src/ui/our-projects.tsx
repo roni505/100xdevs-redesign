@@ -21,52 +21,55 @@ const projectsDetails: OSprojectsCardInputs[] = [
     contributor: "168",
   },
   {
-    title: "cms",
+    title: "mobile-magic",
     description:
-      "An open source codebase powering app.100xdevs.com — the central platform for 100xDevs cohorts, featuring assignments, progress tracking, and community features.",
-    stars: "1.3k",
-    fork: "1.8k",
-    contributor: "168",
+      "Mobile-magic is an intelligent agent that builds, edits, and deploys beautiful, high-performance mobile apps from simple natural language prompts.",
+    stars: "116",
+    fork: "101",
+    contributor: "8",
   },
   {
-    title: "cms",
+    title: "photo-ai",
     description:
-      "An open source codebase powering app.100xdevs.com — the central platform for 100xDevs cohorts, featuring assignments, progress tracking, and community features.",
-    stars: "1.3k",
-    fork: "1.8k",
-    contributor: "168",
+      "100xPhoto is a powerful AI image platform that lets you generate stunning images and train custom AI models. Built with cutting-edge technology.",
+    stars: "149",
+    fork: "118",
+    contributor: "9",
   },
   {
-    title: "cms",
+    title: "job-board",
     description:
-      "An open source codebase powering app.100xdevs.com — the central platform for 100xDevs cohorts, featuring assignments, progress tracking, and community features.",
-    stars: "1.3k",
-    fork: "1.8k",
-    contributor: "168",
+      "Job Board is a platform designed to connect employers with potential employees. Employers can post job listings, and job seekers can apply for these positions.",
+    stars: "369",
+    fork: "457",
+    contributor: "71",
   },
   {
-    title: "cms",
+    title: "daily-code",
     description:
-      "An open source codebase powering app.100xdevs.com — the central platform for 100xDevs cohorts, featuring assignments, progress tracking, and community features.",
-    stars: "1.3k",
-    fork: "1.8k",
-    contributor: "168",
+      "A platform where you'll find the right content, tools, and guidance to help you improve your skills and grow your knowledge effectively.",
+    stars: "901",
+    fork: "1.1k",
+    contributor: "90",
   },
   {
-    title: "cms",
+    title: "muzer",
     description:
-      "An open source codebase powering app.100xdevs.com — the central platform for 100xDevs cohorts, featuring assignments, progress tracking, and community features.",
-    stars: "1.3k",
-    fork: "1.8k",
-    contributor: "168",
+      "Empower your audience to curate your music stream in real time. Connect with fans like never before and build a stronger, interactive community.",
+    stars: "216",
+    fork: "164",
+    contributor: "19",
   },
 ];
 
 const OurProjects = () => {
   return (
-    <div className="mx-auto flex w-full flex-col items-center justify-center px-5 lg:px-0">
-      <SectionHeader title="Explore our projects" />
-      <div className="flex max-w-6xl flex-wrap items-center justify-center gap-9 border-r border-l border-[#1F1F1F] px-5 lg:px-0">
+    <div className="mx-auto flex w-full flex-col items-center justify-center border-t border-[#1F1F1F] px-5 lg:px-0">
+      {/* <SectionHeader title="Explore our projects" /> */}
+      {/* <h2 className="pb-20 text-3xl font-medium text-neutral-100 sm:text-4xl md:text-5xl">
+        Explore our projects
+      </h2> */}
+      <div className="flex max-w-6xl flex-wrap items-center justify-center gap-9 border-r border-l border-[#1F1F1F] px-5 py-7 lg:px-0">
         {projectsDetails.map((details, idx) => (
           <OSprojectsCard key={idx} details={details} />
         ))}

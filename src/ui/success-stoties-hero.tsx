@@ -42,9 +42,9 @@ const SuccessStoriesHero = () => {
         ></div>
         <div className="relative z-10 flex h-[calc(100vh-12rem)] flex-col items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(0,0,0,300),_transparent_70%)]">
           <h1 className="text-center text-4xl leading-tight font-medium sm:text-5xl md:text-6xl lg:text-7xl">
-            Grow Your Skills
+            See the Journey
           </h1>
-          <p className="mt-8 w-full text-center text-lg md:w-[30rem]">
+          <p className="mt-8 w-full text-center text-lg text-neutral-400 sm:w-[30rem]">
             See how learners like you broke into tech, landed jobs, and built
             projects after taking our courses.
           </p>

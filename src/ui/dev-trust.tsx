@@ -7,15 +7,20 @@ const Dev: DevType[] = ["dev1.svg", "dev2.svg", "dev3.svg", "dev4.svg"];
 
 const DevTrust = () => {
   return (
-    <div className="mt-8 flex gap-4">
+    <div className="mt-8 flex items-center gap-4">
       <div className="relative flex">
         {Dev.map((dev, idx) => (
-          <div key={idx} className="flex">
+          <div
+            key={idx}
+            className="overflow-hidden rounded-full"
+            style={{ marginLeft: idx > 0 ? "-15px" : "0" }}
+          >
             <Image
-              src={dev}
+              src={dev || "/placeholder.svg"}
               width={52}
               height={52}
               alt="Images of developers"
+              className="rounded-full"
             />
           </div>
         ))}
