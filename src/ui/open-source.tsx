@@ -50,7 +50,7 @@ const OpenSource = () => {
                     </span>
                   </div>
                 </div>
-                <div className="flex w-[371px] items-center gap-[58px]">
+                <div className="flex w-full items-center gap-[58px] md:w-[371px]">
                   <span className="ml-[18px] h-[120px] w-px bg-[#444444]"></span>
                   <PromptInstruction />
                 </div>
@@ -68,7 +68,7 @@ const OpenSource = () => {
                     </span>
                   </div>
                 </div>
-                <div className="flex w-[371px] items-center gap-[58px]">
+                <div className="flex w-full items-center gap-[58px] md:w-[371px]">
                   <span className="ml-[18px] h-[120px] w-px bg-[#444444]"></span>
                   <BuildInstruction />
                 </div>
@@ -86,7 +86,7 @@ const OpenSource = () => {
                     </span>
                   </div>
                 </div>
-                <div className="flex w-[371px] items-center gap-[58px]">
+                <div className="flex w-full items-center gap-[58px] md:w-[371px]">
                   <span className="ml-[18px] h-[120px] w-px bg-[#444444]"></span>
                   <DeployInstruction />
                 </div>
@@ -167,7 +167,7 @@ export type BadgeIput = {
 
 const Badge = ({ text }: BadgeIput) => {
   return (
-    <div className="">
+    <div className="flex">
       <span className="rounded-md border border-[#454545] bg-gradient-to-b from-[#23272a] to-[#0A0B10] px-2 py-1 text-sm text-white">
         {text}
       </span>
@@ -177,13 +177,13 @@ const Badge = ({ text }: BadgeIput) => {
 
 const PromptInstruction = () => {
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex gap-2">
+    <div className="flex w-full flex-col gap-3">
+      <div className="flex flex-wrap gap-2">
         <Badge text="Describe" />
         <InstructionText text="what you want to" />
         <Badge text="build" />
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         <InstructionText text="including any specific" />
         <Badge text="features" />
       </div>
@@ -193,13 +193,13 @@ const PromptInstruction = () => {
 
 const BuildInstruction = () => {
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex gap-2">
+    <div className="flex w-full flex-col gap-3">
+      <div className="flex flex-wrap gap-2">
         <InstructionText text="The" />
         <Badge text="agent" />
         <InstructionText text=" constructs the solution" />
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         <InstructionText text="using the best" />
         <Badge text="tools" />
         <InstructionText text="and" />
@@ -211,13 +211,13 @@ const BuildInstruction = () => {
 
 const DeployInstruction = () => {
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex gap-2">
+    <div className="flex w-full flex-col gap-3">
+      <div className="flex flex-wrap gap-2">
         <Badge text="Deploy" />
         <InstructionText text="to the chosen" />
         <Badge text="environment" />
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         <InstructionText text="Ensure it's" />
         <Badge text="accessible" />
         <InstructionText text="and ready for users" />
@@ -231,7 +231,9 @@ export type InstructionTextInput = {
 };
 
 const InstructionText = ({ text }: InstructionTextInput) => {
-  return <span className="text-sm font-normal text-neutral-400">{text}</span>;
+  return (
+    <span className="flex text-sm font-normal text-neutral-400">{text}</span>
+  );
 };
 
 export type ChevronBtnInput = {
