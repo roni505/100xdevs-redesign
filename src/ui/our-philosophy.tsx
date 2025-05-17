@@ -31,9 +31,11 @@ export type PhilosophyCardInput = {
 
 const OurPhilosophy = () => {
   return (
-    <div className="mx-auto mt-60 mb-52 flex h-full w-full flex-col items-center justify-center">
-      <span className="text-center text-7xl text-white">Our Philosophy</span>
-      <div className="mt-27 flex flex-col gap-44">
+    <div className="mx-5 mt-60 mb-52 flex h-full w-full flex-col items-center justify-center lg:mx-auto">
+      <span className="text-center text-4xl text-white sm:text-5xl md:text-6xl lg:text-7xl">
+        Our Philosophy
+      </span>
+      <div className="mt-27 flex flex-col items-center justify-center gap-44">
         {philosophyDetails.map((details, idx) => (
           <PhilosophyCard key={idx} details={details} />
         ))}
@@ -67,12 +69,12 @@ const PhilosophyCard = ({ details }: { details: PhilosophyCardInput }) => {
         viewport={{
           once: true,
         }}
-        className="flex items-center justify-center gap-8"
+        className="flex items-center justify-center gap-4 sm:gap-8"
       >
-        <div className="bg-gradient-to-b from-neutral-400 to-black bg-clip-text text-[250px] text-transparent">
+        <div className="bg-gradient-to-b from-neutral-400 to-black bg-clip-text text-9xl text-transparent md:text-[250px]">
           {details.number}
         </div>
-        <div className="flex h-full w-2xs flex-col justify-center">
+        <div className="flex h-full w-full flex-col justify-center sm:w-xs md:w-2xs">
           <motion.span className="text-2xl font-normal text-white">
             {details.title}
           </motion.span>
